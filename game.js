@@ -26,7 +26,7 @@ function drawScene() {
 			break;
 		}
 		if (i == 3) {
-			if(confirm("Game over! Press \"OK\" to play again, or \"Cancel\" to quit.")) {
+			if (confirm("Game over! Press \"OK\" to play again, or \"Cancel\" to quit.")) {
 				window.location.reload();
 			}
 			else {
@@ -255,10 +255,10 @@ function setup() {
 	characters.push(new Character(3));
 	document.addEventListener("keydown", keyDownHandler, true);
 	document.addEventListener("keyup", keyUpHandler, true);
- 	initShaders();
- 	canvas.focus();
- 	setInterval(updateScore, 1000);
- 	meteorInterval = setInterval(createMeteors, intervalTime);
- 	lavaInterval = setInterval(createLava, intervalTime + 1000);
- 	setInterval(drawScene, 16.67);
+	initShaders();
+	canvas.focus();
+	setInterval(updateScore, 1000);
+	meteorInterval = setInterval(createMeteors, intervalTime);
+	lavaInterval = setInterval(createLava, intervalTime + 1000);
+	setInterval(drawScene, 16.67);
 }

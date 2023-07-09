@@ -15,7 +15,7 @@ Use the arrow keys to move and the spacebar to jump.
 
 Challenging features:
 
-	-Collision detection: we need to detect when any of the character squares collides with the edge
+  -Collision detection: we need to detect when any of the character squares collides with the edge
 of their buildings (and thus should not move anymore in a direction), a meteor, or a white hole.
 To do this, we performed checks by finding the central positions of the squares based on the
 coordinates of the vertices for the triangles that make them. We know for each plane, one of the
@@ -23,7 +23,7 @@ coordinates is constant; for the other two, we merely need to check if the dista
 centers of the two coordinate axes is less than the sum of half the length of the sides of the two
 squares, in which case there will be a collision.
 
-	-Jumping and gravity simulation/cessation of falling upon collision with ground: to implement
+  -Jumping and gravity simulation/cessation of falling upon collision with ground: to implement
 jumping for the character squares, upon detection of the keypress of the jump button, we enter a
 jump state; where the character squares are given upward (positive in the y direction) velocities,
 which then update their y positions with each position update as the game progresses. An
